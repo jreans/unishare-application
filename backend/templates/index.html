@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #161616;
+    }
+
+    #container {
+      flex: 1;
+      background-color: #161616;
+      color: white;
+    }
+
+    #headerContainer {
+      display: flex;
+      justify-content: space-between;
+      background-color: black;
+      padding-top: 80px;
+      padding-bottom: 10px;
+      padding-inline: 48px;
+    }
+
+    .headerButton {
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    #searchBar {
+      background-color: #252525;
+      border-radius: 10px;
+      color: white;
+      padding: 18px;
+      margin-top: 32px;
+      margin-inline: 20px;
+      height: 48px;
+    }
+
+    .sectionTitle {
+      font-size: 36px;
+      margin-left: 16px;
+      margin-top: 20px;
+      padding-inline: 4px;
+    }
+
+    .itemList,
+    .pickupList {
+      display: flex;
+      overflow-x: auto;
+      margin-bottom: 60px;
+    }
+
+    .itemContainer,
+    .pickupContainer {
+      width: 172px;
+      height: 320px;
+      padding: 28px;
+    }
+
+    .itemImage,
+    .pickupImage {
+      width: 100px;
+      height: 100px;
+    }
+
+    .itemTitle,
+    .pickupTitle {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .itemLocation,
+    .itemPrice,
+    .pickupTime {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="headerContainer">
+      <a href="#" class="headerButton">Get an item</a>
+      <a href="#" class="headerButton">Lend an item</a>
+    </div>
+
+    <input type="text" id="searchBar" placeholder="Search for item" />
+
+    <div class="sectionTitle">Items near you</div>
+    <div class="itemList">
+      <div class="itemContainer">
+        <img src="./assets/images/emoji4.png" alt="item image" class="itemImage" />
+        <div class="itemTitle">Swiffer</div>
+        <div class="itemLocation">Carman 12</div>
+        <div class="itemPrice">$5/hour</div>
+      </div>
+      <div class="itemContainer">
+        <img src="./assets/images/emoji4.png" alt="item image" class="itemImage" />
+        <div class="itemTitle">Cast Iron Pan</div>
+        <div class="itemLocation">Carman 12</div>
+        <div class="itemPrice">$10/hour</div>
+      </div>
+    </div>
+
+    <div class="sectionTitle">Upcoming Pickups</div>
+    <div class="pickupList">
+      <div class="pickupContainer">
+        <img src="./assets/images/emoji5.png" alt="pickup image" class="pickupImage" />
+        <div class="pickupTitle">Vacuum</div>
+        <div class="pickupTime">9:00am tomorrow</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
